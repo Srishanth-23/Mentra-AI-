@@ -8,6 +8,7 @@ import TeachNoviceView from './components/TeachNoviceView';
 import SpeakYourModelView from './components/SpeakYourModelView';
 import QuizView from './components/QuizView';
 import DashboardView from './components/DashboardView';
+import LoginPage from './components/LoginPage';
 import LoginModal from './components/LoginModal';
 import { deleteDocumentData } from './api';
 
@@ -40,6 +41,10 @@ export default function App() {
     localStorage.removeItem('mentra_user');
     setUser(null);
   };
+
+  if (!user) {
+    return <LoginPage onLoginSuccess={handleLoginSuccess} />;
+  }
 
   const handleIngestSuccess = (docData) => {
     setCurrentDoc(docData);
