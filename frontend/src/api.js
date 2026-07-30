@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://mentra-ai-qra2.onrender.com';
 
 export async function ingestDocument(file) {
   const formData = new FormData();
