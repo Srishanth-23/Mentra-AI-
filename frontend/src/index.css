@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Source Serif 4', 'Lora', Georgia, serif;
+    --font-body: 'Inter', 'IBM Plex Sans', -apple-system, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'JetBrains Mono', monospace;
+
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 0.875rem;   /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg: 1.125rem;   /* 18px */
+    --text-xl: 1.5rem;     /* 24px */
+    --text-2xl: 2rem;      /* 32px */
+    --text-3xl: 2.5rem;    /* 40px */
+
+    --leading-tight: 1.2;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.65;
+
+    --tracking-normal: 0;
+    --tracking-wide: 0.02em;
+    --tracking-headings: -0.01em;
+  }
+
+  body {
+    background-color: #F5F0E6; /* Warm Paper Cream Base */
+    color: #2C221E; /* Deep Parchment Ink Text */
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    letter-spacing: var(--tracking-normal);
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-headings);
+  }
+}
+
+/* Common Typography & Formatting Utility Classes */
+.font-heading { font-family: var(--font-heading); }
+.font-body { font-family: var(--font-body); }
+.font-mono { font-family: var(--font-mono); }
+
+.leading-tight { line-height: var(--leading-tight) !important; }
+.leading-normal { line-height: var(--leading-normal) !important; }
+.leading-relaxed { line-height: var(--leading-relaxed) !important; }
+
+.tracking-headings { letter-spacing: var(--tracking-headings) !important; }
+.tracking-wide { letter-spacing: var(--tracking-wide) !important; }
+
+/* Unified Badge Component */
+.mentra-badge {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: var(--tracking-wide);
+  padding: 0.25rem 0.625rem; /* 4px 10px */
+  border-radius: 9999px;
+  display: inline-flex;
+  items-center: center;
+  gap: 0.375rem;
+  line-height: 1;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.evidence-underline {
+  position: relative;
+  display: inline;
+  background-image: linear-gradient(transparent 70%, rgba(217, 164, 65, 0.4) 70%);
+  padding-bottom: 2px;
+}
+
+.evidence-mark {
+  border-bottom: 2px solid #D9A441;
+  display: inline;
+  font-family: var(--font-mono);
+  letter-spacing: var(--tracking-wide);
+}
+
+.concept-canvas {
+  background-image: radial-gradient(#DDD5C7 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.upload-dashed {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23CFC4B2' stroke-width='1.5' stroke-dasharray='8%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.upload-dashed:hover {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%238C6D3B' stroke-width='2' stroke-dasharray='12%2c 6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.dashed-line {
+  stroke-dasharray: 4;
+  stroke: #CFC4B2;
+  stroke-width: 1.5;
+}
+
+/* Custom Paper Cream Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F0E6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DDD5C7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CFC4B2;
+}

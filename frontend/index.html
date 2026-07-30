@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentra | Evidence-Grounded Learning Copilot</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome for Professional Mermaid Architecture Diagram Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS CDN Configured with Deep Study Dark Academic Theme -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#F5F0E6",           /* Warm Parchment / Paper Cream */
+              "bg-primary": "#F5F0E6",
+              "surface": "#FFFDF7",              /* Pure Paper Surface */
+              "bg-surface": "#FFFDF7",
+              "surface-container": "#EFE9DD",
+              "surface-container-low": "#F9F6F0",
+              "surface-container-lowest": "#FFFDF7",
+              "surface-container-high": "#E7E0D3",
+              "surface-container-highest": "#DDD5C7",
+              "surface-hover": "#E7E0D3",
+              "primary": "#2C221E",              /* Deep Ink / Warm Dark Text */
+              "on-surface": "#2C221E",
+              "on-background": "#2C221E",
+              "surface-tint": "#8C6D3B",
+              "secondary": "#786C5E",            /* Warm Muted Scholar Taupe */
+              "on-surface-variant": "#786C5E",
+              "outline": "#A89B8C",              /* Subtle Muted Border */
+              "text-disabled": "#A89B8C",
+              "outline-variant": "#E2D9CB",      /* Light Cream Divider */
+              "border-subtle": "#E2D9CB",
+              "highlighter": "#D9A441",          /* Warm Amber Highlighter */
+              "highlighter-amber": "#D9A441",
+              "evidence-accent": "#D9A441",
+              "on-tertiary-container": "#D9A441",
+              "mastery-sage": "#4E7756",         /* Academic Forest Sage Green */
+              "mastery-high": "#4E7756",
+              "alert-clay": "#9E4735",           /* Terra Cotta Brick Red */
+              "mastery-low": "#9E4735",
+              "error": "#9E4735",
+              "error-container": "#FCEBE6",
+              "on-error-container": "#9E4735"
+            },
+            fontFamily: {
+              heading: ["'Source Serif 4'", "'Lora'", "Georgia", "serif"],
+              body: ["'Inter'", "'IBM Plex Sans'", "-apple-system", "sans-serif"],
+              mono: ["'IBM Plex Mono'", "'JetBrains Mono'", "monospace"],
+              /* Aliases for backwards compatibility */
+              "headline-lg": ["'Source Serif 4'", "'Lora'", "Georgia", "serif"],
+              "headline-md": ["'Source Serif 4'", "'Lora'", "Georgia", "serif"],
+              "body-lg": ["'Inter'", "'IBM Plex Sans'", "sans-serif"],
+              "body-md": ["'Inter'", "'IBM Plex Sans'", "sans-serif"],
+              "label-mono": ["'IBM Plex Mono'", "'JetBrains Mono'", "monospace"],
+              citation: ["'IBM Plex Mono'", "'JetBrains Mono'", "monospace"]
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-background text-on-background font-body-md min-h-screen selection:bg-highlighter/30">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

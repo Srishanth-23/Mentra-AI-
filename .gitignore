@@ -1,0 +1,22 @@
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# Python / Backend
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*.db
+backend/*.sqlite
+backend/*.faiss
+backend/*.pkl
+backend/.env
+backend/venv/
+backend/env/
+
+# IDE / System
+.DS_Store
+*.log
+.vscode/
+.idea/
